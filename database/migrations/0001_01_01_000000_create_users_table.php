@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('password');
             $table->foreignId('role_id')->nullable()->index();
             $table->string('phone')->nullable();
+            $table->string('speciality')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
